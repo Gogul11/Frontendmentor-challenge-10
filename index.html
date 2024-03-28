@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up form</title>
+
+        <link rel="stylesheet" href="signup.css">
+        <link rel="shortcut icon" href="sign up\assets\images\favicon-32x32.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="design">
+                
+            </div>
+
+            <div id="content">
+                <div>
+
+                    <h1>Stay updated!</h1>
+                    <p>  Join 60,000+ product managers receiving monthly updates on:</p>
+
+                    <div id="list">
+                        
+                        <p>Product discovery and building what matters</p>
+                    </div>
+                    <div id="list">
+                   
+                        <p>Measuring to ensure updates are a success</p>
+                    </div>
+                    <div id="list">
+                        
+                        <p>And much more!</p>
+                    </div>
+                    
+                    <div id="form">
+                        <p> Email address <span id="span1">Valid email required</span></p>
+                        <input type="email" id="mail" required placeholder="email@company.com">
+                        <button type="submit" id="submit" onclick="sign()">Subscribe to monthly newsletter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="next">
+                <img src="assets/images/icon-success.svg">
+                <p id="success">Thanks for subscribing!</p>
+                
+                <p>A confirmation email has been sent to <span id="span2"></span>.
+                    Please open it and click the button inside to confirm your subscription.</p>
+                    
+                    <button type="button" id="dismiss" onclick="ignore()">Dismiss message</button>
+        </div>
+
+        <script src="signup.js"></script>
+    </body>
+</html>

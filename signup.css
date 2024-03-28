@@ -1,0 +1,194 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+#body{
+
+    font-size: 16px;
+    
+}
+#main{
+
+    display: flex;
+    flex-direction: column;
+    display: block;
+}
+#design{
+
+    background: url("assets/images/illustration-sign-up-mobile.svg");
+    height: 284px;
+    width: 375px;
+}
+
+#content{
+    color: hsl(234, 29%, 20%);
+    margin: 15px;
+}
+
+#list{
+
+    display: flex;
+    flex-direction: row;
+}
+
+#list p{
+
+    margin-left: 10px;
+    color: hsl(234, 29%, 20%);
+}
+
+#list::before{
+    content: url("assets/images/icon-list.svg");
+    position: relative;
+    top: 15px;
+}
+
+#form{
+
+    display: flex;
+    flex-direction: column;
+}
+#form p{
+
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+#span1{
+    display: none;
+    margin-left: 200px;
+    color: hsla(4, 100%, 67%,1);
+}
+#mail{
+
+    height: 25px;
+    width: 300px;
+    padding: 8px 25px;
+    border-radius: 5px;
+    border-color:hsl(231, 7%, 60%);
+    margin-bottom: 20px;
+}
+#mail::placeholder{
+    color: hsl(231, 7%, 60%);
+}
+
+#submit{
+
+    height: 45px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    border-radius: 5px;
+    width: 350px;
+    border: none;
+}
+
+#submit:hover{
+
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0px 0px 105px 30px hsla(4, 100%, 67%,0.15);
+}
+
+
+#next{
+
+    display: none;
+    margin: 150px 5px 0px 15px;
+}
+
+#success{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+#next p{
+    color: hsl(235, 18%, 26%);
+}
+
+#span2{
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+#dismiss{
+
+    margin-top: 150px;
+    width: 350px;
+    padding: 20px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+}
+
+#dismiss:hover{
+    transform: scale(1.1);
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0px 0px 105px 30px hsla(4, 100%, 67%,0.15); 
+}
+
+@media (min-width:400px){
+
+    body{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        }
+    #main{
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content:flex-end;
+        align-items: center;
+        height: 650px;
+        width: 950px;
+        box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.30);
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    #design{
+
+        background: url("assets/images/illustration-sign-up-desktop.svg");
+        height: 593px;
+        width: 400px;
+    }
+
+    #content{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 60px;
+    }
+
+    #mail{
+        width: 350px;
+    }
+
+    #submit{
+        width: 400px;
+    }
+
+
+    #next{
+        height: 450px;
+        width: 400px;
+        box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.30);
+        border-radius: 10px;
+        padding: 40px 50px 30px 50px;
+    }
+
+    #dismiss{
+
+        width: 400px;
+        margin-top: 50px;
+    }
+
+    #span1{
+
+        margin-left: 250px;
+    }
+   
+
+}
